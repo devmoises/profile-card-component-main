@@ -1,0 +1,76 @@
+html, body{
+   overflow: hidden;
+}
+
+body{
+   background-color: var(--dark-cyan);
+   font-size: var(--body-font-size);
+   font-family: var(--font-family-kumbh-sans);
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;   
+}
+
+.container{
+   position: relative;
+
+   &::before,
+   &::after{
+      content: "";
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 622px;
+      height: 622px;
+
+      @media (min-width: 1024px){
+         width: 978px;
+         height: 978px;
+      }
+   }
+
+   &::before{
+      background-image: url("../images/bg-pattern-top.svg");       
+      right: 155px;
+      bottom: 220px; 
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03); 
+      border-radius: 50%;    
+
+      @media (min-width: 1024px){
+         right: 150px;
+         bottom: 100px;  
+         box-shadow: none;
+      }
+   }
+
+   &::after{
+      background-image: url("../images/bg-pattern-bottom.svg");      
+      left: 140px;
+      top: 200px;
+
+      @media (min-width: 1024px){
+         left: 200px;
+         top: 100px;
+      }
+   }
+}
+
+.attribution {
+   font-size: 11px;
+   text-align: center;
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 100%;
+   z-index: 20;
+}
+.attribution a {
+   color: var(--very-dark-blue);
+
+   &:hover{
+      text-decoration: underline;
+   }
+}
