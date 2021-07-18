@@ -81,7 +81,7 @@ body {
 @media (min-width: 1024px) {
   .container::before {
     right: 150px;
-    bottom: 100px;
+    bottom: 130px;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -95,8 +95,8 @@ body {
 
 @media (min-width: 1024px) {
   .container::after {
-    left: 200px;
-    top: 100px;
+    left: 140px;
+    top: 200px;
   }
 }
 
@@ -133,6 +133,12 @@ body {
   z-index: 10;
 }
 
+@media (min-width: 1024px) {
+  .card {
+    width: 350px;
+  }
+}
+
 .card__header, .card__photo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,7 +168,7 @@ body {
   text-align: center;
 }
 
-.card__info h3 {
+.card__info .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -206,7 +212,7 @@ body {
           flex-direction: column;
 }
 
-.card__analytics--item h4 {
+.card__analytics--item .number {
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;

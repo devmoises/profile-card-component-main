@@ -9,6 +9,10 @@
    position: relative;
    z-index: 10;
 
+   @media (min-width: 1024px){
+      width: 350px;
+   }
+
    &__header,
    &__photo{
       display: flex;
@@ -31,7 +35,7 @@
       margin-top: 24px;      
       text-align: center;
 
-      h3{
+      .title{
          font-weight: 700;
          font-size: 18px;
          line-height: 18px;
@@ -61,7 +65,7 @@
          align-items: center;
          flex-direction: column;
 
-         h4{
+         .number{
             font-weight: bold;
             font-size: 18px;
             line-height: 18px;
